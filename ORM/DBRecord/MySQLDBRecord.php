@@ -6,6 +6,6 @@ class MySQLDBRecord extends DBrecord
 {
     public function crud()
     {
-        echo 'Работает crud для MySQL <br>';
+        echo 'Заглушка CRUD для MySQL' . PHP_EOL;
     }
 }

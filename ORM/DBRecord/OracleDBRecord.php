@@ -6,6 +6,6 @@ class OracleDBRecord extends DBrecord
 {
     public function crud()
     {
-        echo 'Работает crud для Oracle <br>';
+        echo 'Заглушка CRUD для Oracle' . PHP_EOL;
     }
 }

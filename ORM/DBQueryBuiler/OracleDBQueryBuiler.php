@@ -6,6 +6,6 @@ class OracleDBQueryBuiler extends DBQueryBuiler
 {
     function query()
     {
-        echo 'Работает конструктор запросов для Oracle <br>';
+        echo 'Заглушка конструктора запросов для Oracle' . PHP_EOL;
     }
 }

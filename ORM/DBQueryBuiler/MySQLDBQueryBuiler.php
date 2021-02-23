@@ -6,6 +6,6 @@ class MysqlDBQueryBuiler extends DBQueryBuiler
 {
     function query()
     {
-        echo 'Работает конструктор запросов для MySQL <br>';
+        echo 'Заглушка конструктора запросов для MySQL' . PHP_EOL;
     }
 }

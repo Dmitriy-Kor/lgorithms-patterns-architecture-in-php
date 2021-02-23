@@ -6,6 +6,6 @@ class PostgreSQLDBRecord extends DBrecord
 {
     public function crud()
     {
-        echo 'Работает crud для PostgreSQL <br>';
+        echo 'Заглушка CRUD для PostgreSQL' . PHP_EOL;
     }
 }

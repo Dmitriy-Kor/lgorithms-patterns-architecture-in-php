@@ -10,17 +10,17 @@ use DBrecord\MySQLDBRecord;
 class MySQLFactory extends DBFactory {
     protected function createDBConection() : DBConnection
     {
-        echo 'создаем класс подключения для MySQL <br>';
+        echo 'создаем класс подключения для MySQL' . PHP_EOL;
         return new MySQLDBCconnection;
     }
     protected function createDBQueryBulier() : DBQueryBuiler
     {
-        echo 'создаем класс конструктора запросов для MySQL <br>';
+        echo 'создаем класс конструктора запросов для MySQL' . PHP_EOL;
         return new MysqlDBQueryBuiler; 
     }
     protected function createDBRecord() : DBrecord
     {
-        echo 'создаем класс crud для MySQL <br>';
+        echo 'создаем класс crud для MySQL' . PHP_EOL;
         return new MySQLDBRecord;
     }
 }
