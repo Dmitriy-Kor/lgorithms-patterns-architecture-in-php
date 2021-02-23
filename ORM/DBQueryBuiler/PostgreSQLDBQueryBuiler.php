@@ -6,6 +6,6 @@ class PostgreSQLDBQueryBuiler extends DBQueryBuiler
 {
     function query()
     {
-        echo 'Работает конструктор запросов для PosgreSQL <br>';
+        echo 'Заглушка конструктора запросов для PosgreSQL' . PHP_EOL;
     }
 }

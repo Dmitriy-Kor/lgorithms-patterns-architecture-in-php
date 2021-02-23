@@ -11,17 +11,17 @@ class PostgreSQLFactory extends DBFactory
 {
     protected function createDBConection(): DBConnection
     {
-        echo 'создаем класс подключения для PostgreSQL <br>';
+        echo 'создаем класс подключения для PostgreSQL' . PHP_EOL;
         return new PostgreSQLDBCconnection;
     }
-    protected function createDBQueryBulier(): DBQueryBuiler
+    protected function createDBQueryBulier() : DBQueryBuiler
     {
-        echo 'создаем класс конструктора запросов для PostgreSQL <br>';
-        return new PostgreSQLDBQueryBuiler;
+        echo 'создаем класс конструктора запросов для PostgreSQL' . PHP_EOL;
+        return new PostgreSQLDBQueryBuiler; 
     }
     protected function createDBRecord(): DBrecord
     {
-        echo 'создаем класс crud для PostgreSQL <br>';
+        echo 'создаем класс crud для PostgreSQL' . PHP_EOL;
         return new PostgreSQLDBRecord;
     }
 }

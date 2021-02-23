@@ -6,6 +6,6 @@ class PostgreSQLDBCconnection extends DBConnection
 {
     function startConection()
     {
-        echo 'Работает подключение к БД PostgreSQL <br>';
+        echo 'Заглушка подключения к БД PostgreSQL' . PHP_EOL;
     }
 }

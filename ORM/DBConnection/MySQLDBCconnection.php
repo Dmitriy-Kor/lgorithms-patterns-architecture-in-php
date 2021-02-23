@@ -6,6 +6,6 @@ class MySQLDBCconnection extends DBConnection
 {
     function startConection()
     {
-        echo 'Работает подключение к БД MySQL <br>';
+        echo 'Заглушка подключения к БД MySQL' . PHP_EOL;
     }
 }

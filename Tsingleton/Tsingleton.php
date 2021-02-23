@@ -25,5 +25,5 @@ class Test
     use Tsingleton;
 } 
 
-// $test = Test::getInstance();
-// $test->hello();
+$test = Test::getInstance();
+$test->hello();

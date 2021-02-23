@@ -23,14 +23,14 @@
 require 'autoload.php';
 use DB\{ DBFactory, MySQLFactory, PostgreSQLFactory, OracleFactory};
 
-// function test(DBFactory $db)
-// {
-//      $db->createDB();
-// }
+function test(DBFactory $db)
+{
+     $db->createDB();
+}
 
-// test(new MySQLFactory);
-// test(new PostgreSQLFactory);
-// test(new OracleFactory);
+test(new MySQLFactory);
+//test(new PostgreSQLFactory);
+//test(new OracleFactory);
 
-$db = new MySQLFactory;
-$db->createDB();
+// $db = new MySQLFactory;
+// $db->createDB();
