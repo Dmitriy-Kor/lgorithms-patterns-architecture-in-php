@@ -28,9 +28,9 @@ function test(DBFactory $db)
      $db->createDB();
 }
 
-test(new MySQLFactory);
+//test(new MySQLFactory);
 //test(new PostgreSQLFactory);
 //test(new OracleFactory);
 
-// $db = new MySQLFactory;
-// $db->createDB();
+$db = new MySQLFactory;
+$db->createDB();
