@@ -1,26 +1,18 @@
 <?php
 // Adapter
 
-class CircleAreaLib
-{
-   public function getCircleArea(int $diagonal)
-   {
-       $area = (M_PI * ($diagonal**2))/4;
+spl_autoload_register(function ($classname) {
+    require_once($classname . '.php');
+});
+$circle = new Circle();
+echo $circle->circleArea(10) . PHP_EOL;
 
-       return $area;
-   }
-}
-
-class SquareAreaLib
-{
-   public function getSquareArea(int $diagonal)
-   {
-       $area = ($diagonal**2)/2;
-
-       return $area;
-   }
-}   
+$square = new Square();
+echo $square->squareArea(10) . PHP_EOL;
 
 
-$test = new CircleAreaLib();
-echo($test->getCircleArea(10));
+$circleAdapter = new CircleAdapter(new CircleAreaLib());
+echo $circleAdapter->circleArea(10) . PHP_EOL; 
+
+$squareAdapter = new SquareAdapter(new SquareAreaLib());
+echo $squareAdapter->squareArea(10) . PHP_EOL; 
